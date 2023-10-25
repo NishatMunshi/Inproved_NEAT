@@ -3,7 +3,7 @@
 
 #define NUMBER_OF_INPUTS 3
 #define NUMBER_OF_OUTPUTS 2
-#define NUMBER_OF_LINES 500
+#define NUMBER_OF_LINES 1000
 
 class Neuron;
 using NeuronID = unsigned;

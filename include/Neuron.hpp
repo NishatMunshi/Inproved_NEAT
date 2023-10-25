@@ -9,7 +9,7 @@ class Neuron
     std::unordered_map<Neuron *, float> m_outputSynapses;
 
 private:
-    inline static float activation_function(const float _x) { return tanh(_x); }
+    inline static float activation_function(const float _x) { return 1/(1+exp(-_x)); }
 
 public:
     const unsigned indexInLayer;

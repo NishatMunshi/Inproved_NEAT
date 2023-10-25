@@ -64,7 +64,7 @@ public:
         for (const auto &genome : m_genePool)
         {
             genome->numberOfCorrectAnswers = 0;
-            genome->score = 1000;
+            genome->score = NUMBER_OF_LINES;
 
             reconstruct_net_according_to(genome->genes);
 
@@ -77,8 +77,8 @@ public:
                 float output;
                 file >> output;
 
-                label[0] = -1;
-                label[1] = -1;
+                label[0] = 0;
+                label[1] = 0;
 
                 if (output == 1)
                     label[1] = 1;
